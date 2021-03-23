@@ -1,0 +1,113 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Font;
+import javax.swing.JLabel;
+import javax.swing.UIManager;
+import javax.swing.ImageIcon;
+import java.awt.SystemColor;
+
+public class KeyStore {
+
+	private JFrame frame;
+	private JTextField textField_1;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					KeyStore window = new KeyStore();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public KeyStore() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setBackground(Color.WHITE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.DARK_GRAY);
+		panel.setBounds(0, 0, 423, 540);
+		frame.getContentPane().add(panel);
+		
+		JButton btnLogin = new JButton("SignUp");
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnLogin.setBackground(Color.DARK_GRAY);
+		btnLogin.setForeground(SystemColor.textHighlight);
+		btnLogin.setBounds(627, 362, 131, 37);
+		frame.getContentPane().add(btnLogin);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(495, 286, 263, 29);
+		frame.getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField = new JTextField();
+		textField.setForeground(Color.GREEN);
+		textField.setColumns(10);
+		textField.setBounds(495, 212, 263, 29);
+		frame.getContentPane().add(textField);
+		
+		JLabel lblUsername = new JLabel("Username:");
+		lblUsername.setForeground(Color.DARK_GRAY);
+		lblUsername.setBounds(495, 185, 74, 16);
+		frame.getContentPane().add(lblUsername);
+		
+		JLabel lblPassword = new JLabel("Password:");
+		lblPassword.setForeground(Color.DARK_GRAY);
+		lblPassword.setBounds(495, 259, 74, 16);
+		frame.getContentPane().add(lblPassword);
+		
+		JLabel lblVersion = new JLabel("Version 1.00");
+		lblVersion.setBounds(751, 511, 74, 16);
+		frame.getContentPane().add(lblVersion);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setBounds(466, 9, 336, 179);
+		frame.getContentPane().add(lblNewLabel);
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Nomec\\Desktop\\LABS\\Labs\\src\\img\\300.png"));
+		
+		JButton btnNewButton = new JButton("Login");
+		btnNewButton.setForeground(Color.DARK_GRAY);
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnNewButton.setBackground(UIManager.getColor("Button.darkShadow"));
+		btnNewButton.setBounds(495, 362, 122, 37);
+		frame.getContentPane().add(btnNewButton);
+		frame.setBounds(100, 100, 869, 587);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}

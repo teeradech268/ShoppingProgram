@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 elements to &apos;src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;src&apos;&#x0D;&#x0A;- Destination element: &apos;src/(default package)&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     StoreSignup.java&#x0D;&#x0A;     StoreTopup.java&#x0D;&#x0A;     Storemain.java&#x0D;&#x0A;     StoreCart.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="/&lt;" element1="/img&lt;{StoreSignup.java" element2="/img&lt;{StoreTopup.java" element3="/img&lt;{Storemain.java" element4="/img&lt;{StoreCart.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1518939290590" units="4" version="1.0"/>
+</session>

@@ -1,0 +1,169 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Font;
+import javax.swing.JLabel;
+import javax.swing.UIManager;
+
+public class Storemain {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Storemain window = new Storemain();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Storemain() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setBackground(Color.WHITE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.DARK_GRAY);
+		panel.setBounds(0, 0, 851, 31);
+		frame.getContentPane().add(panel);
+		
+		JLabel lblVersion = new JLabel("Version 1.00");
+		lblVersion.setBounds(751, 511, 74, 16);
+		frame.getContentPane().add(lblVersion);
+		
+		JLabel lblInfoUser = new JLabel("Welcome :");
+		lblInfoUser.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		lblInfoUser.setBounds(659, 44, 110, 21);
+		frame.getContentPane().add(lblInfoUser);
+		
+		JLabel lblName = new JLabel("ProductName");
+		lblName.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblName.setBounds(74, 247, 96, 21);
+		frame.getContentPane().add(lblName);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.DARK_GRAY);
+		panel_1.setBounds(43, 116, 156, 118);
+		frame.getContentPane().add(panel_1);
+		
+		JLabel lblPrice = new JLabel("ProductPrice");
+		lblPrice.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblPrice.setBounds(74, 269, 96, 21);
+		frame.getContentPane().add(lblPrice);
+		
+		JLabel label = new JLabel("ProductPrice");
+		label.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label.setBounds(320, 269, 96, 21);
+		frame.getContentPane().add(label);
+		
+		JLabel label_1 = new JLabel("ProductName");
+		label_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label_1.setBounds(320, 247, 96, 21);
+		frame.getContentPane().add(label_1);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(Color.DARK_GRAY);
+		panel_2.setBounds(289, 116, 156, 118);
+		frame.getContentPane().add(panel_2);
+		
+		JLabel label_2 = new JLabel("ProductPrice");
+		label_2.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label_2.setBounds(548, 269, 96, 21);
+		frame.getContentPane().add(label_2);
+		
+		JLabel label_3 = new JLabel("ProductName");
+		label_3.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label_3.setBounds(548, 247, 96, 21);
+		frame.getContentPane().add(label_3);
+		
+		JPanel panel_3 = new JPanel();
+		panel_3.setBackground(Color.DARK_GRAY);
+		panel_3.setBounds(517, 116, 156, 118);
+		frame.getContentPane().add(panel_3);
+		
+		JLabel label_4 = new JLabel("ProductPrice");
+		label_4.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label_4.setBounds(74, 488, 96, 21);
+		frame.getContentPane().add(label_4);
+		
+		JLabel label_5 = new JLabel("ProductName");
+		label_5.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label_5.setBounds(74, 466, 96, 21);
+		frame.getContentPane().add(label_5);
+		
+		JPanel panel_4 = new JPanel();
+		panel_4.setBackground(Color.DARK_GRAY);
+		panel_4.setBounds(43, 335, 156, 118);
+		frame.getContentPane().add(panel_4);
+		
+		JLabel label_6 = new JLabel("ProductPrice");
+		label_6.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label_6.setBounds(320, 488, 96, 21);
+		frame.getContentPane().add(label_6);
+		
+		JLabel label_7 = new JLabel("ProductName");
+		label_7.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label_7.setBounds(320, 466, 96, 21);
+		frame.getContentPane().add(label_7);
+		
+		JPanel panel_5 = new JPanel();
+		panel_5.setBackground(Color.DARK_GRAY);
+		panel_5.setBounds(289, 335, 156, 118);
+		frame.getContentPane().add(panel_5);
+		
+		JLabel label_8 = new JLabel("ProductPrice");
+		label_8.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label_8.setBounds(548, 488, 96, 21);
+		frame.getContentPane().add(label_8);
+		
+		JLabel label_9 = new JLabel("ProductName");
+		label_9.setFont(new Font("Tahoma", Font.BOLD, 14));
+		label_9.setBounds(548, 466, 96, 21);
+		frame.getContentPane().add(label_9);
+		
+		JPanel panel_6 = new JPanel();
+		panel_6.setBackground(Color.DARK_GRAY);
+		panel_6.setBounds(517, 335, 156, 118);
+		frame.getContentPane().add(panel_6);
+		
+		JLabel lblNext = new JLabel("Next");
+		lblNext.setBounds(769, 469, 56, 16);
+		frame.getContentPane().add(lblNext);
+		
+		JLabel lblPrevious = new JLabel("previous ");
+		lblPrevious.setBounds(701, 469, 56, 16);
+		frame.getContentPane().add(lblPrevious);
+		
+		JLabel lblCart = new JLabel("CART");
+		lblCart.setFont(new Font("Tahoma", Font.BOLD, 17));
+		lblCart.setBounds(734, 116, 56, 66);
+		frame.getContentPane().add(lblCart);
+		frame.setBounds(100, 100, 869, 587);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
